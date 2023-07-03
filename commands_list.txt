@@ -1,0 +1,2 @@
+gobuster dir --url http://demo.testfire.net/ -t 50 -w /usr/share/wordlists/dirbuster/directory-list-lowercase-2.3-medium.txt
+ls -la / -R
