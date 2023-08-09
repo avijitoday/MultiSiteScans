@@ -1,2 +1,5 @@
-gobuster dir --url http://demo.testfire.net/ -t 50 -w /usr/share/wordlists/dirbuster/directory-list-lowercase-2.3-medium.txt
-ls -la / -R
+dirsearch -f -e html,php,tar.gz,txt,xml,zip -t 100 --deep-recursive -w /usr/share/wordlists/dirbuster/directory-list-lowercase-2.3-medium.txt -u http://localhost:8080/
+hydra -L users -P passwords -M target  ssh
+#hydra -L users -P passwords 127.0.0.1  ssh
+#crackmapexec ssh 127.0.0.1 -u users -p passwords
+nmap -sV -sC -v -p-  testfire.net:80
